@@ -8,8 +8,15 @@
         m = commit --amend
         mm = commit --amend --all --no-edit
 
+        # Show branches
         b = branch --color --sort=committerdate \
             --format '%(HEAD)%(align:30)%(refname:strip=2)%(end)%09%(color:yellow)%(objectname:short) %(committerdate:iso) %(color:blue)%(upstream:strip=1) %(color:reset)%(contents:subject)'
+
+        # Show branches with tracking info, slow on large repos
+        bt = branch --color --sort=committerdate \
+            --format '%(align:31)%(refname:strip=2)%(end)%09%(color:white)%(align:16)%(upstream:track,nobracket)%(end)%09%(color:blue)%(upstream:strip=1) %(color:reset)%(contents:subject)'
+
+        # Delete a branch
         bd = branch -D
 
         f = fetch
