@@ -1,0 +1,134 @@
+[alias]
+        s = status
+        su = status --untracked-files=normal
+
+        co = checkout
+
+        ci = commit -v --signoff
+        m = commit --amend
+        mm = commit --amend --all --no-edit
+
+        b = branch --color --sort=committerdate \
+            --format '%(HEAD)%(align:30)%(refname:strip=2)%(end)%09%(color:yellow)%(objectname:short) %(committerdate:iso) %(color:blue)%(upstream:strip=1) %(color:reset)%(contents:subject)'
+        bd = branch -D
+
+        f = fetch
+        fa = fetch --all
+
+        r = remote -v
+        ri = rebase -i
+
+        p = cherry-pick
+
+        # Log one-per-line
+        lo = log --oneline --decorate
+
+        # Log one-per-line with diffstat (one line for each modified fiel)
+        lot = log --oneline --decorate --stat
+
+        # Log one-per-line linearly (only follow first parent)
+        lol = log --oneline --decorate -m --first-parent
+
+        # Log one-per-line linearly with diffstat
+        # Shows diffstat for merge commits because of -m
+        # Shows parents for each identification of merged hashes
+        lom = log --oneline --decorate --stat --first-parent -m --parents
+
+        # Log with author
+        loa = log --format="oneline-author"
+
+        # Log one-per-line with ascii graph
+        lor = log --oneline --graph
+
+        # Log one-per-line with ascii graph but cut away upstream
+        loru = log --oneline --graph HEAD ^@{u}^
+
+        # Log one-per-line with ascii graph and author
+        lora = log --graph --format="oneline-author"
+
+        # Log with --stat (show modified changes)
+        los = log --stat --decorate
+        losf = log --stat --decorate --format='fuller'
+
+        # Log with --patch (full diff)
+        lop = log --patch --decorate --no-prefix
+        lopf = log --patch --decorate --no-prefix --format='fuller'
+
+        # Tag with dates
+        list-recent-tags = tag --sort=-creatordate --format='%(refname:short)\t\t%(creatordate:iso)'
+
+        pure = pull --rebase
+        recon = rebase --continue
+
+        d = diff --no-prefix
+        dc = diff --no-prefix --cached
+        wd = diff --no-prefix --word-diff
+        quote-commit = show -s --abbrev=12 --pretty='quote'
+        quote-fixes = show -s --abbrev=12 --pretty='fixes'
+        quote-picked-from = show -s --pretty='picked-from'
+
+        for-each-refname = for-each-ref --format=%(refname)
+
+        show-commit-subject = show -s --pretty=format:%s
+
+        show-commit-datetime = show -s --format=%cd --date=format:%Y%m%dT%H%M%S
+
+        bistart = bisect start --term-old=old --term-new=new
+
+        submodule-list-paths = submodule foreach -q 'echo $sm_path'
+
+        # See https://docs.gitlab.com/ee/user/project/push_options.html
+        push-gitlab-merge = push -o merge_request.create -o merge_request.target=main -o merge_request.merge_when_pipeline_succeeds
+[log]
+        # dates are shown in ISO format by default
+        date = iso
+[fetch]
+        prune = true
+[pull]
+        # The `git pull` command defaults to merge like in old versions without warnings
+        # A separate `git pure` alias is available for pull --rebase
+        rebase = false
+[pretty]
+        quote = commit %h (\"%s\")
+        fixes = Fixes: %h (\"%s\")
+        picked-from = (cherry picked from commit %H)
+        oneline-author = %h %an \t%s
+        rebase-todo = pick %h %s
+[status]
+        showUntrackedFiles=no
+[rebase]
+        autosquash = true
+[color]
+        diff = auto
+        status = auto
+        branch = auto
+[diff]
+        context = 5
+[core]
+        excludesfile = ~/.gitignore
+        whitespace = cr-at-eol
+        abbrev = 12
+[merge]
+        tool = vimdiff
+[pager]
+        grep = false
+        branch = false
+[push]
+        default = matching
+[sendemail]
+        suppressCC = body
+        suppressFrom = true
+        annotate = true
+        tocover = true
+        cccover = true
+        confirm = always
+[format]
+        signoff = true
+        thread = shallow
+[pack]
+        windowMemory = 10m
+        packSizeLimit = 10m
+[gc]
+        auto = 0
+[rerere]
+        enabled = true
