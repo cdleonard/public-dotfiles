@@ -1,2 +1,3 @@
 # public-dotfiles
-Public subset of dotfiles
+
+This is public subset of my personal dotfiles
