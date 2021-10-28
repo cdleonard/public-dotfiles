@@ -1,0 +1,174 @@
+{
+    // Do not automatically close brackets
+    "editor.autoClosingBrackets": "never",
+
+    // Cursor blinking is distracting and normal terminals don't do this
+    "editor.cursorBlinking": "solid",
+
+    // Like scrolloff in vim:
+    "editor.cursorSurroundingLines": 5,
+
+    // Line numbers are distracting and shown at the bottom anyway
+    "editor.lineNumbers": "off",
+
+    // Minimap is large and distracting
+    "editor.minimap.enabled": false,
+
+    // Don't highlight occurences of the current word (distracting)
+    "editor.occurrencesHighlight": false,
+
+    // Make leading and trailing whitespace visible
+    "editor.renderWhitespace": "boundary",
+
+    // Always show folding controls because animations are distracting
+    "editor.showFoldingControls": "always",
+
+    // Automatic selection highlight is distracting
+    "editor.selectionHighlight": false,
+
+    // Scrollbar fading is distracting, make it always visible
+    // Option is not yet 'official', see:
+    // https://github.com/Microsoft/vscode/issues/35454
+    // https://github.com/microsoft/vscode/issues/98632
+    "editor.scrollbar.vertical": "visible",
+    "editor.scrollbar.horizontal": "visible",
+
+    // Use clang-format instead of built-in microsoft tool
+    "[c]": {
+        "editor.defaultFormatter": "xaver.clang-format"
+    },
+
+    // for vscodevim:
+    "vim.normalModeKeyBindings": [
+        {
+            "before": [";"],
+            "after": [":"]
+        }
+    ],
+
+    "vim.handleKeys": {
+        // Avoid confusion with "show panel" on linux
+        "<C-j>": false,
+        // Avoid confusion with various chords
+        "<C-k>": false,
+        // In vim these mean Page Up/Down but I don't use them
+        // Block handling to avoid confusion with tmux CTRL-B
+        "<C-b>": false,
+        "<C-f>": false
+    },
+
+    // Try to use system clipboard for vscode vim
+    "vim.useSystemClipboard": true,
+
+    // Highlight searches
+    "vim.hlsearch": true,
+
+    // Use the solarized themes
+    "workbench.preferredDarkColorTheme": "Solarized Dark",
+    "workbench.preferredLightColorTheme": "Solarized Light",
+    "workbench.colorTheme": "Solarized Dark",
+
+    // Always render indent guides in tree
+    "workbench.tree.renderIndentGuides": "always",
+
+    // Bigger workbench tree indents for increased visibility
+    "workbench.tree.indent": 16,
+
+    // Adjust gutter and breadcrumbs to distinguish from text area
+    "workbench.colorCustomizations": {
+        "[Solarized Dark]": {
+            "breadcrumb.background":    "#073642",
+            "editorGutter.background":  "#073642"
+        },
+        "[Dark+]": {
+            "breadcrumb.background":    "#222222",
+            "editorGutter.background":  "#222222"
+        }
+    },
+
+    // Disable welcome screen
+    "workbench.startupEditor": "none",
+
+    // status bar is very small and useful and essential with vscodevim
+    "zenMode.hideStatusBar": false,
+
+    // Use maximizeTerminal extension but with CTRL-; keybinding
+    "maximizeterminal.useAlternativeKeybinding": true,
+
+    // Do not allow vscode chords, let terminal handle ctrl-k instead
+    "terminal.integrated.allowChords": false,
+
+    // Start in workspace folder
+    "terminal.integrated.cwd": "${workspaceFolder}",
+
+    // Try to replicate iTerm2 behavior for selecting inside tmux
+    "terminal.integrated.copyOnSelection": true,
+    "terminal.integrated.macOptionClickForcesSelection": true,
+
+    // Lots of scrollback in integrated terminal
+    "terminal.integrated.scrollback": 100000,
+
+    // Explicit file associations to avoid some unfortunate extension behavior:
+    "files.associations": {
+        "*.log": "plaintext"
+    },
+
+    // Autosave is nice, avoid holding unsaved changes
+    "files.autoSave": "onFocusChange",
+
+    // Add EOL at EOF, like vim
+    "files.insertFinalNewline": true,
+
+    // Use built-in "simple file dialog" instead of the system file dialog
+    "files.simpleDialog.enable": true,
+
+    // Make vscode interpret `git config core.excludesFile`
+    "search.useGlobalIgnoreFiles": true,
+
+    // Split untracked git changes to reduce clutter
+    "git.untrackedChanges": "separate",
+
+    // Open file when clicking a file in "source control" tree
+    "git.openDiffOnClick": false,
+
+    // Disable inline gitlens blame
+    "gitlens.codeLens.enabled": false,
+
+    // Put short docker ContainerName first
+    "docker.containers.label": "ContainerName",
+    "docker.containers.description": [ "FullTag" ],
+
+    // Mention explicit default to avoid spurious git changes
+    "window.zoomLevel": 0,
+
+    // Only discover tests explicitly
+    // This causes annoying flashes when combined with autosave
+    "python.testing.autoTestDiscoverOnSaveEnabled": false,
+
+    // Default python interpreter is default "python3"
+    "python.defaultInterpreterPath": "/usr/bin/python3",
+
+    "launch": {
+        "version": "0.2.0",
+        "configurations": [
+            {
+                "name": "My Generic Python Attach localhost:5678",
+                "type": "python",
+                "request": "attach",
+                "connect": {
+                    "host": "localhost",
+                    "port": 5678
+                },
+                "justMyCode": false,
+            }
+        ]
+    },
+
+    // Disable most forms of telemetry:
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+    "telemetry.telemetryLevel": "off",
+    "redhat.telemetry.enabled": false,
+    "workbench.settings.enableNaturalLanguageSearch": false,
+    "workbench.enableExperiments": false
+}

@@ -1,0 +1,43 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    // From: https://github.com/microsoft/vscode/issues/75548
+    {
+        "key": "pageup",
+        "command": "-workbench.action.terminal.scrollUpPage",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "pagedown",
+        "command": "-workbench.action.terminal.scrollDownPage",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "shift+pageup",
+        "command": "workbench.action.terminal.scrollUpPage",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "shift+pagedown",
+        "command": "workbench.action.terminal.scrollDownPage",
+        "when": "terminalFocus"
+    },
+    // reRunTask
+    {
+        "key": "ctrl+cmd+b",
+        "command": "workbench.action.tasks.reRunTask"
+    },
+    // default ctrl-r openRecent overlaps vscodevim
+    {
+        "key": "ctrl+cmd+r",
+        "command": "workbench.action.openRecent"
+    },
+    // switch diff panes using vim-like shortcuts.
+    {
+        "key": "ctrl+w right",
+        "command": "workbench.action.compareEditor.focusPrimarySide"
+    },
+    {
+        "key": "ctrl+w left",
+        "command": "workbench.action.compareEditor.focusOtherSide"
+    },
+]
