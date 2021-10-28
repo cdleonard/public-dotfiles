@@ -44,8 +44,14 @@
         # Log with author
         loa = log --format="oneline-author"
 
+        # Log one-per-line with commiter timestamps
+        lod = log --pretty="oneline-commiterdate"
+
         # Log one-per-line with ascii graph
         lor = log --oneline --graph
+
+        # Log one-per-line with ascii graph and commiter timestamps
+        lord = log --oneline --graph --pretty="oneline-commiterdate"
 
         # Log one-per-line with ascii graph but cut away upstream
         loru = log --oneline --graph HEAD ^@{u}^
@@ -100,6 +106,8 @@
         fixes = Fixes: %h (\"%s\")
         picked-from = (cherry picked from commit %H)
         oneline-author = %h %an \t%s
+        oneline-commiterdate = %C(auto)%h %C(blue)%cd%C(auto)%d %C(reset)%s
+        oneline-authordate = %C(auto)%h %C(blue)%ad%C(auto)%d %C(reset)%s
         rebase-todo = pick %h %s
 [status]
         showUntrackedFiles=no
