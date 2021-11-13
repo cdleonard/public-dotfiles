@@ -120,7 +120,6 @@
 [diff]
         context = 5
 [core]
-        excludesfile = ~/.gitignore
         whitespace = cr-at-eol
         abbrev = 12
 [merge]
