@@ -146,3 +146,6 @@
         auto = 0
 [rerere]
         enabled = true
+[init]
+        # Avoid warnings on `git init`, always use `main`
+        defaultBranch = main
