@@ -164,6 +164,9 @@
         ]
     },
 
+    // clangd is much better
+    "C_Cpp.intelliSenseEngine": "Disabled",
+
     // Disable most forms of telemetry:
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
