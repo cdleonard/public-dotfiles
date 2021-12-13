@@ -8,6 +8,9 @@
     // Like scrolloff in vim:
     "editor.cursorSurroundingLines": 5,
 
+    // Required by GitHub Copilot
+    "editor.inlineSuggest.enabled": true,
+
     // Line numbers are distracting and shown at the bottom anyway
     "editor.lineNumbers": "off",
 
