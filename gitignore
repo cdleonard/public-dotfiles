@@ -5,6 +5,6 @@
 /.coverage
 /.gdb_history
 /.sconsign.dblite
+/.tox
 /.vimrc
 /tags
-.tox
