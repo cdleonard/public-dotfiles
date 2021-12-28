@@ -125,6 +125,11 @@
     // Use built-in "simple file dialog" instead of the system file dialog
     "files.simpleDialog.enable": true,
 
+    // Automatic trimming of trailing whitespace and final newlines on save
+    // git complains about this on every commit anyway
+    "files.trimTrailingWhitespace": true,
+    "files.trimFinalNewlines": true
+
     // Make vscode interpret `git config core.excludesFile`
     "search.useGlobalIgnoreFiles": true,
 
