@@ -149,3 +149,7 @@
 [init]
         # Avoid warnings on `git init`, always use `main`
         defaultBranch = main
+
+[fetch]
+        # A value of 0 will give some reasonable default. If unset, it defaults to 1.
+        parallel = 0
