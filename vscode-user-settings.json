@@ -128,7 +128,7 @@
     // Automatic trimming of trailing whitespace and final newlines on save
     // git complains about this on every commit anyway
     "files.trimTrailingWhitespace": true,
-    "files.trimFinalNewlines": true
+    "files.trimFinalNewlines": true,
 
     // Make vscode interpret `git config core.excludesFile`
     "search.useGlobalIgnoreFiles": true,
