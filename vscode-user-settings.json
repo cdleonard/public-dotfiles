@@ -69,7 +69,7 @@
     // Use the solarized themes
     "workbench.preferredDarkColorTheme": "Solarized Dark",
     "workbench.preferredLightColorTheme": "Solarized Light",
-    "workbench.colorTheme": "Solarized Dark",
+    "workbench.colorTheme": "Solarized Light",
 
     // Always render indent guides in tree
     "workbench.tree.renderIndentGuides": "always",
