@@ -167,7 +167,7 @@
                     "host": "localhost",
                     "port": 5678
                 },
-                "justMyCode": false,
+                "justMyCode": false
             }
         ]
     },
