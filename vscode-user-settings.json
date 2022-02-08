@@ -172,6 +172,10 @@
         ]
     },
 
+    "dotfiles.repository": "git@gitlab.com:cdleonard/private-scripts",
+    "dotfiles.targetPath": "~/files/work/private-scripts",
+    "dotfiles.installCommand": "~/files/work/private-scripts/bin/privinst-devcontainer",
+
     // clangd is much better
     "C_Cpp.intelliSenseEngine": "Disabled",
 
