@@ -73,7 +73,8 @@
         lopf = log --patch --decorate --no-prefix --format='fuller'
 
         # Tag with dates
-        list-recent-tags = tag --sort=-creatordate --format='%(refname:short)\t\t%(creatordate:iso)'
+        tag-list-recent = tag --sort=-creatordate --format='%(refname:short)\t\t%(creatordate:iso)'
+        tl = tag-list-recent
 
         pure = pull --rebase
         recon = rebase --continue
