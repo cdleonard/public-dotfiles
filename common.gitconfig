@@ -5,7 +5,8 @@
         su = status --untracked-files=normal
 
         # Show files ignored by repo .gitignore (skipping user gitignore)
-        show-repo-ignore = -c core.excludesFile= status --untracked-files=normal --ignored=matching
+        status-ignore-match = -c core.excludesFile= status --untracked-files=normal --ignored=matching
+        sim = status-ignore-match
 
         co = checkout
 
