@@ -149,6 +149,9 @@
     // Mention explicit default to avoid spurious git changes
     "window.zoomLevel": 0,
 
+    // Always start with an empty window
+    "window.restoreWindows": "none",
+
     // Only discover tests explicitly
     // This causes annoying flashes when combined with autosave
     "python.testing.autoTestDiscoverOnSaveEnabled": false,
