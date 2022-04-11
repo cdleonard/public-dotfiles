@@ -11,6 +11,9 @@
     // Required by GitHub Copilot
     "editor.inlineSuggest.enabled": true,
 
+    // Explicit disable because of clangd
+    "editor.inlayHints.enabled": false,
+
     // Line numbers are distracting and shown at the bottom anyway
     "editor.lineNumbers": "off",
 
