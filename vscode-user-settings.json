@@ -114,6 +114,12 @@
     // Lots of scrollback in integrated terminal
     "terminal.integrated.scrollback": 100000,
 
+    // Disable persistent session - unclear usefulness
+    "terminal.integrated.enablePersistentSessions": false,
+
+    // Disable local echo - garbles input on very slow connections
+    "terminal.integrated.localEchoEnabled": "off",
+
     // Explicit file associations to avoid some unfortunate extension behavior:
     "files.associations": {
         "*.log": "plaintext"
