@@ -161,10 +161,6 @@
     // Always start with an empty window
     "window.restoreWindows": "none",
 
-    // Only discover tests explicitly
-    // This causes annoying flashes when combined with autosave
-    "python.testing.autoTestDiscoverOnSaveEnabled": false,
-
     // Default python interpreter is default "python3"
     "python.defaultInterpreterPath": "/usr/bin/python3",
 
