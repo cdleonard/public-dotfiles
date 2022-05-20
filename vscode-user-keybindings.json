@@ -40,4 +40,13 @@
         "key": "ctrl+w left",
         "command": "workbench.action.compareEditor.focusOtherSide"
     },
+    // Toggle sidebar with mac-style shortcuts
+    {
+        "key": "cmd+b",
+        "command": "workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "cmd+j",
+        "command": "workbench.action.togglePanel"
+    }
 ]
