@@ -48,5 +48,10 @@
     {
         "key": "cmd+j",
         "command": "workbench.action.togglePanel"
+    },
+    // Toggle maximized panel
+    {
+        "key": "shift+cmd+j",
+        "command": "workbench.action.toggleMaximizedPanel"
     }
 ]
