@@ -126,7 +126,8 @@
 
     // Explicit file associations to avoid some unfortunate extension behavior:
     "files.associations": {
-        "*.log": "plaintext"
+        "*.log": "plaintext",
+        "*_traces": "plaintext"
     },
 
     // Autosave is nice, avoid holding unsaved changes
