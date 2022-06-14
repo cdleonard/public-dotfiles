@@ -199,4 +199,12 @@
     "redhat.telemetry.enabled": false,
     "workbench.settings.enableNaturalLanguageSearch": false,
     "workbench.enableExperiments": false,
+
+    // Enable github copilot by default for everything
+    "github.copilot.enable": {
+        "*": true,
+        "yaml": true,
+        "plaintext": true,
+        "markdown": true
+    }
 }
