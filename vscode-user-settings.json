@@ -199,7 +199,4 @@
     "redhat.telemetry.enabled": false,
     "workbench.settings.enableNaturalLanguageSearch": false,
     "workbench.enableExperiments": false,
-    "[html]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    }
 }
