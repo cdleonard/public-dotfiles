@@ -185,6 +185,9 @@
         ]
     },
 
+    // only use checkpatch extension manually
+    "checkpatch.run": "manual",
+
     "dotfiles.repository": "git@gitlab.com:cdleonard/private-scripts",
     "dotfiles.targetPath": "~/files/work/private-scripts",
     "dotfiles.installCommand": "~/files/work/private-scripts/bin/privinst-devcontainer",
