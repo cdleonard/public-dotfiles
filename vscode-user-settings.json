@@ -128,7 +128,8 @@
     "files.associations": {
         "*.log": "plaintext",
         "*_traces": "plaintext",
-        "Makefile.*": "makefile"
+        "Makefile.*": "makefile",
+        "Dockerfile.sh": "shellscript"
     },
 
     // Autosave is nice, avoid holding unsaved changes
