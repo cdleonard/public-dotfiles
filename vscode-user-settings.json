@@ -2,6 +2,9 @@
     // Do not automatically close brackets
     "editor.autoClosingBrackets": "never",
 
+    // Stop asking about screen reader every startup
+    "editor.accessibilitySupport": "off",
+
     // Cursor blinking is distracting and normal terminals don't do this
     "editor.cursorBlinking": "solid",
 
