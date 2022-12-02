@@ -96,9 +96,6 @@
         bistart = bisect start --term-old=old --term-new=new
 
         submodule-list-paths = submodule foreach -q 'echo $sm_path'
-
-        # See https://docs.gitlab.com/ee/user/project/push_options.html
-        push-gitlab-merge = push -o merge_request.create -o merge_request.target=main -o merge_request.merge_when_pipeline_succeeds
 [log]
         # dates are shown in ISO format by default
         date = iso
