@@ -186,6 +186,14 @@
                     "port": 5678
                 },
                 "justMyCode": false
+            },
+            {
+                "name": "My Generic Python Unit Test Debug, not justMyCode",
+                "type": "python",
+                "purpose": [
+                    "debug-test"
+                ],
+                "justMyCode": false
             }
         ]
     },
