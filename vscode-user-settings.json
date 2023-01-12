@@ -171,9 +171,6 @@
     // Always start with an empty window
     "window.restoreWindows": "none",
 
-    // Default python interpreter is default "python3"
-    "python.defaultInterpreterPath": "/usr/bin/python3",
-
     // Stop automatic activation of environments by default because I don't trust this
     "python.terminal.activateEnvironment": false,
 
