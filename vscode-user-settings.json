@@ -174,6 +174,9 @@
     // Default python interpreter is default "python3"
     "python.defaultInterpreterPath": "/usr/bin/python3",
 
+    // Stop automatic activation of environments by default because I don't trust this
+    "python.terminal.activateEnvironment": false,
+
     "launch": {
         "version": "0.2.0",
         "configurations": [
@@ -222,5 +225,12 @@
         "yaml": true,
         "plaintext": true,
         "markdown": true
-    }
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "explorer.confirmDelete": false
 }
