@@ -209,7 +209,7 @@
     "dotfiles.installCommand": "~/files/work/private-scripts/bin/privinst-devcontainer",
 
     // clangd is much better
-    "C_Cpp.intelliSenseEngine": "Disabled",
+    "C_Cpp.intelliSenseEngine": "disabled",
 
     // Disable most forms of telemetry:
     "telemetry.enableCrashReporter": false,
