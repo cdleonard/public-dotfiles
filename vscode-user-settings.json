@@ -226,11 +226,15 @@
         "plaintext": true,
         "markdown": true
     },
+
+    // Custom formatters
     "[typescript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "[javascript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "explorer.confirmDelete": false
+    "[cpp]": {
+        "editor.defaultFormatter": "xaver.clang-format"
+    }
 }
