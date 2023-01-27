@@ -127,6 +127,9 @@
     // This breaks copy and other terminals don't do this.
     "terminal.integrated.altClickMovesCursor": false,
 
+    // Default windows terminal is Git Bash - widely available and useful
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+
     // Explicit file associations to avoid some unfortunate extension behavior:
     "files.associations": {
         "*.log": "plaintext",
