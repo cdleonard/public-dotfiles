@@ -125,6 +125,7 @@
         context = 5
 [core]
         whitespace = cr-at-eol
+        editor = vim
         abbrev = 12
 [merge]
         tool = vimdiff
