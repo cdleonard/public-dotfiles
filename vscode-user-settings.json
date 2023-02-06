@@ -152,6 +152,9 @@
     "files.trimTrailingWhitespace": true,
     "files.trimFinalNewlines": true,
 
+    // Default unix EOL everywhere
+    "files.eol": "\n",
+
     // Make vscode interpret `git config core.excludesFile`
     "search.useGlobalIgnoreFiles": true,
 
