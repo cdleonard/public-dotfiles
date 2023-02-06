@@ -177,6 +177,9 @@
     // Stop automatic activation of environments by default because I don't trust this
     "python.terminal.activateEnvironment": false,
 
+    // Disable cmake automatic configure
+    "cmake.configureOnOpen": false,
+
     "launch": {
         "version": "0.2.0",
         "configurations": [
