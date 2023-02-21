@@ -183,6 +183,9 @@
     // Disable cmake automatic configure
     "cmake.configureOnOpen": false,
 
+    // Disable automatic TOC in markdown extension
+    "markdown.extension.toc.updateOnSave": false,
+
     "launch": {
         "version": "0.2.0",
         "configurations": [
