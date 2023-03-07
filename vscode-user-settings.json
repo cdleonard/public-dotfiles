@@ -155,6 +155,9 @@
     // Default unix EOL everywhere
     "files.eol": "\n",
 
+    // Suppress warnings on file deletion
+    "explorer.confirmDelete": false,
+
     // Make vscode interpret `git config core.excludesFile`
     "search.useGlobalIgnoreFiles": true,
 
