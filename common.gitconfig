@@ -10,7 +10,7 @@
 
         co = checkout
 
-        ci = commit -v --signoff
+        ci = commit -v
         m = commit --amend
         mm = commit --amend --all --no-edit
 
