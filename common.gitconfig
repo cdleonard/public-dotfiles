@@ -14,6 +14,9 @@
         m = commit --amend
         mm = commit --amend --all --no-edit
 
+        # Quick Merge which is still explicit (no message edit, no fast forward)
+        merge-quick = merge --no-edit --no-ff
+
         # Show branches
         b = branch --color --sort=committerdate \
             --format '%(HEAD)%(align:30)%(refname:strip=2)%(end)%09%(color:yellow)%(objectname:short) %(committerdate:iso) %(color:blue)%(upstream:strip=1) %(color:reset)%(contents:subject)'
