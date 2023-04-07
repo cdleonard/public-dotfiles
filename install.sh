@@ -62,6 +62,7 @@ main()
     set -x
     handle_dotfiles_vscode
     handle_gitconfig
+    handle_file "$(readlink -f bashrc)" "$HOME/.bashrc"
 }
 
 main "$@"
