@@ -99,6 +99,9 @@
         bistart = bisect start --term-old=old --term-new=new
 
         submodule-list-paths = submodule foreach -q 'echo $sm_path'
+
+        # Sufficiently forceful git submodule update
+        sufic = submodule update --force --init --checkout --recursive
 [log]
         # dates are shown in ISO format by default
         date = iso
