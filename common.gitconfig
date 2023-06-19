@@ -102,6 +102,9 @@
 
         # Sufficiently forceful git submodule update
         sufic = submodule update --force --init --checkout --recursive
+
+        # Mark file executable (relevant in windows)
+        mark-executable = update-index --chmod=+x
 [log]
         # dates are shown in ISO format by default
         date = iso
