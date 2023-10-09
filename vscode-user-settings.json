@@ -57,6 +57,10 @@
 
     "vim.handleKeys": {
         // Avoid confusion with "show panel" on linux
+        "<C-p>": false,
+        // For symmetry with ctrl-p
+        "<C-n>": false,
+        // Avoid confusion with "show panel" on linux
         "<C-j>": false,
         // Avoid confusion with various chords
         "<C-k>": false,
