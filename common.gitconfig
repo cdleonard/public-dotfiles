@@ -52,6 +52,7 @@
 
         # Log with author
         loa = log --format="oneline-author"
+        loae = log --format="oneline-author-email"
 
         # Log one-per-line with commiter timestamps
         lod = log --pretty="oneline-commiterdate"
@@ -118,7 +119,8 @@
         quote = commit %h (\"%s\")
         fixes = Fixes: %h (\"%s\")
         picked-from = (cherry picked from commit %H)
-        oneline-author = %h %an \t%s
+        oneline-author = %h %an\t%s
+        oneline-author-email = %h %ae\t%s
         oneline-commiterdate = %C(auto)%h %C(blue)%cd%C(auto)%d %C(reset)%s
         oneline-authordate = %C(auto)%h %C(blue)%ad%C(auto)%d %C(reset)%s
         rebase-todo = pick %h %s
