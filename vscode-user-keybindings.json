@@ -74,5 +74,10 @@
         "key": "ctrl+shift+v",
         "command": "workbench.action.terminal.paste",
         "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+    },
+    // Remove ctrl+shift+v from preview-vscode.showPreview extension, too easy to confuse with real paste
+    {
+        "key": "ctrl+shift+v",
+        "command": "-preview-vscode.showPreview"
     }
 ]
