@@ -24,7 +24,7 @@
     "editor.minimap.enabled": false,
 
     // Don't highlight occurences of the current word (distracting)
-    "editor.occurrencesHighlight": false,
+    "editor.occurrencesHighlight": "off",
 
     // Make leading and trailing whitespace visible
     "editor.renderWhitespace": "boundary",
