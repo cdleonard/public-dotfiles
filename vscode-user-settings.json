@@ -194,6 +194,9 @@
     // Disable automatic TOC in markdown extension
     "markdown.extension.toc.updateOnSave": false,
 
+    // Disable automatic port forwarding
+    "remote.autoForwardPorts": false,
+
     "launch": {
         "version": "0.2.0",
         "configurations": [
