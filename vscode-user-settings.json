@@ -190,6 +190,8 @@
     // Disable cmake automatic configure
     "cmake.configureOnOpen": false,
     "cmake.configureOnEdit": false,
+    // Disable notification about moved options
+    "cmake.showOptionsMovedNotification": false,
 
     // Disable automatic TOC in markdown extension
     "markdown.extension.toc.updateOnSave": false,
