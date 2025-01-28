@@ -134,6 +134,10 @@
     // Default windows terminal is Git Bash - widely available and useful
     "terminal.integrated.defaultProfile.windows": "Git Bash",
 
+    // Fixes missing underscore in some configurations
+    // Suggested here: https://github.com/microsoft/vscode/issues/123077
+    "terminal.integrated.gpuAcceleration": "off",
+
     // Explicit file associations to avoid some unfortunate extension behavior:
     "files.associations": {
         "*.log": "plaintext",
