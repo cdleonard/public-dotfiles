@@ -1,4 +1,7 @@
 {
+    // Disable collapsing identical lines in debug console
+    "debug.console.collapseIdenticalLines": false,
+
     // Do not automatically close brackets
     "editor.autoClosingBrackets": "never",
 
