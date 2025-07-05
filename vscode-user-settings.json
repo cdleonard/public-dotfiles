@@ -181,6 +181,10 @@
     // Disable inline gitlens blame
     "gitlens.codeLens.enabled": false,
 
+    // Disable annoying paid features
+    "gitlens.launchpad.indicator.enabled": false,
+    "gitlens.plusFeatures.enabled": false,
+
     // Put short docker ContainerName first
     "docker.containers.label": "ContainerName",
     "docker.containers.description": [ "FullTag" ],
