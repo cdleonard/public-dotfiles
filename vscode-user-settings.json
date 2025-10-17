@@ -141,6 +141,10 @@
     // Suggested here: https://github.com/microsoft/vscode/issues/123077
     "terminal.integrated.gpuAcceleration": "off",
 
+    // Disable fancy sticky scrolling - behave as a normal terminal
+    // https://code.visualstudio.com/docs/terminal/shell-integration#_sticky-scroll
+    "terminal.integrated.stickyScroll.enabled": false,
+
     // Explicit file associations to avoid some unfortunate extension behavior:
     "files.associations": {
         "*.log": "plaintext",
