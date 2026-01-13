@@ -189,6 +189,11 @@
     "gitlens.launchpad.indicator.enabled": false,
     "gitlens.plusFeatures.enabled": false,
 
+    // Disable gitlens interactive rebase editor
+    "workbench.editorAssociations": {
+        "git-rebase-todo": "default"
+    },
+
     // Put short docker ContainerName first
     "docker.containers.label": "ContainerName",
     "docker.containers.description": [ "FullTag" ],
