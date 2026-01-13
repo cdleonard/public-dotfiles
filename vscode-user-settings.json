@@ -264,6 +264,9 @@
         "markdown": true
     },
 
+    // See https://docs.ansible.com/projects/vscode-ansible/configuration/
+    "ansible.lightspeed.enabled": false,
+
     // Custom formatters
     "[typescript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
